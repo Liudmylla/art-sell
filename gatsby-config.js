@@ -15,8 +15,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/item`,
-        name: `item`,
+        path: `${__dirname}/content/items`,
+        name: `items`,
       },
     },
     {
@@ -33,7 +33,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 630,
+              maxWidth: 800,
             },
           },
           {
@@ -50,6 +50,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+ 
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -60,8 +61,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Gatsby Snipcart`,
+        short_name: `Gatsby`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
@@ -73,14 +74,7 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
-    {
-      resolve: 'gatsby-source-sanity',
-      options: {
-        projectId: 'q1yndbhe',
-        dataset: 'production',
-        watchMode: true,
-      },
-    },
+ 
     {
       resolve: 'gatsby-plugin-snipcart',
       options: {
@@ -89,6 +83,6 @@ module.exports = {
           autopop: true,
       }
 },
-  
+`gatsby-plugin-styled-components`,
   ],
 }

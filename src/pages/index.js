@@ -1,4 +1,3 @@
-// This is the homepage.
 
 import React from "react"
 import { graphql } from "gatsby"
@@ -34,7 +33,7 @@ class BlogIndex extends React.Component {
               key={node.fields.slug}
               link={node.fields.slug}
               heading={title}
-              image={image.childImageSharp.fluid}
+              image={image}
               price={price}
             />
           )
@@ -66,7 +65,7 @@ export const pageQuery = graphql`
           frontmatter {
             title
             price
-            image {
+            image  {
               childImageSharp {
                 fluid(maxWidth: 800) {
                   ...GatsbyImageSharpFluid

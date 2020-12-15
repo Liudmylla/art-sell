@@ -2,7 +2,7 @@
 title: Chess board
 date: 2019-06-19
 id: 1
-price: 25
+price: 25.00
 image: ./chess_board.jpeg
 description: Oil painting abstract 30x40
 customField: 

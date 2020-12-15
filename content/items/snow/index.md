@@ -2,7 +2,7 @@
 title: Snow White
 date: 2019-06-19
 id: 6
-price: 25
+price: 25.00
 image: ./snow_white.jpeg
 description: Oil painting 50x50
 customField: 

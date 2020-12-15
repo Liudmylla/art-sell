@@ -2,8 +2,8 @@
 title: Wather flowers
 date: 2019-06-19
 id: 2
-price: 30
-image: ./water_flower.jpeg
+price: 30.00
+image: ./water_flowers.jpeg
 description: Oil painting abstract modern 20x30
 customField: 
     name: Pack Size

@@ -59,10 +59,10 @@ const itemThumbnail = (props) => {
     return (
         <ItemThumbnailStyled>
             <LinkStyled to={props.link}>
-                <ImgStyled fluid={props.image} />
+            <ImgStyled fluid={props.image} />
                 <Heading>{props.heading}</Heading>
             </LinkStyled>
-            <Price>£{props.price.toFixed(2)}</Price>
+            <Price>€{props.price.toFixed(2)}</Price>
         </ItemThumbnailStyled >
     )
 }

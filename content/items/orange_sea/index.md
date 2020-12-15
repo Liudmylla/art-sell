@@ -2,8 +2,8 @@
 title: Orange sea
 date: 2019-06-19
 id: 4
-price: 25
-image: ./orange_sea.jpeg
+price: 25.00
+image: ./orange-sea.jpeg
 description: Oil painting abstract 40x50
 customField: 
     name: Pack Size

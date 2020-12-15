@@ -2,7 +2,7 @@
 title: Sakura
 date: 2019-06-19
 id: 5
-price: 30
+price: 30.00
 image: ./sakura.jpeg
 description: Oil painting abstract 30x40
 customField: 

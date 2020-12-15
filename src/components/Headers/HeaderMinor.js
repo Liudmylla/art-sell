@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components"
 import { Link } from "gatsby";
 
-import { ShoppingCart } from 'styled-icons/material/ShoppingCart';
+import { ShoppingCart } from 'styled-icons/material';
 
 const HeaderMinorStyled = styled.div`
     width: 100%;

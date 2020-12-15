@@ -2,7 +2,7 @@
 title: Golden town
 date: 2019-06-19
 id: 3
-price: 35
+price: 35.00
 image: ./golden_town.jpeg
 description: Oil painting abstract 40x50
 customField: 
