@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Gatsby/Snipcart e-commerce`,
     author: {
-      name: `Kyle Mathews`,
+      name: `Liudmyla Duvivier`,
       summary: `who lives and works in San Francisco building useful things.`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
@@ -15,8 +15,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/blog`,
-        name: `blog`,
+        path: `${__dirname}/content/item`,
+        name: `item`,
       },
     },
     {
@@ -66,12 +66,29 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/favicon.png`,
       },
     },
     `gatsby-plugin-react-helmet`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    {
+      resolve: 'gatsby-source-sanity',
+      options: {
+        projectId: 'q1yndbhe',
+        dataset: 'production',
+        watchMode: true,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-snipcart',
+      options: {
+          //replace with own Snipcart API key
+          apiKey:'OTljZjg3ODEtOTkwOC00ZDIyLTk4ZmEtYTIyNmI5YTUyMGMyNjM3NDM1NzQzNDM3NDIxOTc5',
+          autopop: true,
+      }
+},
+  
   ],
 }
